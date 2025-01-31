@@ -6,12 +6,22 @@ jobs:
     steps:
       - name: Chcekout repo
         uses: actions/checkout@v4
+
+      - name: List And Read File
+        run: |
+            echo "My Frist Git Hub Action"
+            ls -Itra
+            cat README.md
         
-      - name: Welcome Message
-        run: echo "My First Workflow GitHub Jobs"
 
-      - name: List files
-        run: ls
+      # - name: Welcome Message
+      #   run: echo "My First Workflow GitHub Jobs"
 
-      - name: Read File
-        run: cat README.md
+      # - name: List files
+      #   run: ls
+
+      # - name: Read File
+      #   run: cat README.md
+
+      # - name: Generate ASCII ArtWork
+      #   run: cowsay -f dragone "Run for Cover, I am a DRAGONE...RAWR">> dragone.text 
