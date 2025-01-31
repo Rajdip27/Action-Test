@@ -4,6 +4,9 @@ jobs:
   first_jobs:
     runs-on: ubuntu-latest
     steps:
+      - name: Chcekout repo
+        uses: actions/checkout@v4
+        
       - name: Welcome Message
         run: echo "My First Workflow GitHub Jobs"
 
